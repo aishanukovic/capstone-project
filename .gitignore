@@ -1,0 +1,41 @@
+# === Node.js / Backend ===
+node_modules/
+.env
+.env.local
+.DS_Store
+dist/
+coverage/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+google-credentials.JSON
+
+# === React + Vite / Web App ===
+capstone-web/node_modules/
+capstone-web/.env
+capstone-web/.DS_Store
+capstone-web/dist/
+
+# === React Native / Expo Mobile App ===
+capstone-mobile/node_modules/
+capstone-mobile/.expo/
+capstone-mobile/.expo-shared/
+capstone-mobile/.env
+capstone-mobile/.DS_Store
+capstone-mobile/android/
+capstone-mobile/ios/
+capstone-mobile/web-build/
+
+# === General IDE / System Files ===
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# === OS-generated files ===
+Icon?
+Desktop.ini

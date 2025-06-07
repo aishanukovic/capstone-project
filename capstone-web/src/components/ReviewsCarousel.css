@@ -1,0 +1,109 @@
+.reviews-carousel {
+  background-color: #e4dffe;
+  padding: 4rem 0rem;
+  overflow: hidden;
+  box-shadow: inset 0 6px 6px -6px rgba(0, 0, 0, 0.08),
+              inset 0 -6px 6px -6px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-title {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  text-align: center;
+  color: black;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.carousel-row {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+}
+
+.carousel-track {
+  display: inline-flex;
+  animation: scroll-left 100s linear infinite;
+}
+
+.carousel-track.reverse {
+  animation: scroll-right 100s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin: 0 1rem;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 150px;
+  max-height: 150px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-name {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.review-stars {
+  color: #facc15;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .carousel-title {
+    padding-left: 2rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carousel-title {
+    padding-left: 10rem;
+  }
+}

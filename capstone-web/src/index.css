@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.prose span.bg-yellow-300 {
+  background-color: #fde68a;
+  padding: 0.1em 0.2em;
+  border-radius: 0.25rem;
+}
